@@ -1,11 +1,11 @@
 #8 bittes szám bin to dec
 import re
 from math import sqrt
-meret = 8
-binNumber = str(input("Adj meg egy bin számot:"))
-bits =  [None] * meret
+size = 8
+binNumber = str(input("Give a binary number:"))
+bits =  [None] * size
 max_bit_number = 128
-bit_numbers = [None] * meret
+bit_numbers = [None] * size
 finalNumber = 0
 
 def bitNumber():
@@ -27,7 +27,7 @@ def bitsToArray():
 def bitsInBitNumbers():
     finalNumber = 0
     inic = 0
-    numbers = [None] * meret
+    numbers = [None] * size
     while inic < len(numbers):
         numbers[inic] = bits[inic] * bit_numbers[inic]
         inic += 1
@@ -38,5 +38,6 @@ def bitsInBitNumbers():
 bitNumber()
 bitsToArray()
 bitsInBitNumbers()
+
 
 
